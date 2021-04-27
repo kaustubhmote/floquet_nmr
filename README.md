@@ -1,0 +1,77 @@
+# Floquet Theory in Magnetic Resonance
+
+
+This repository is intended as a pedagogical accompaniment to the following article: 
+"Floquet Theory in Magnetic Resonance: Formalism and Applications" by 
+Konstantin Ivanov, Kaustubh R. Mote, Matthias Ernst, Asif Equbal, and P. K. Madhu 
+appearing in Progress in Nuclear Magnetic Resonance Spectroscopy (2021).
+
+The `floquet` module provides some convenience functions to generate Floquet Hamiltonian (single-mode), and carry out rotations,
+and show how calculations for cases such as magic-angle spinning can be done using this formalism. The actual calculations are 
+collected as Jupyter Notebooks in the `examples` directory. 
+
+
+# Requirements
+1. Python 3.7 or higher
+1. Matplotlib 3.3 or higher
+1. Numpy
+
+
+# Installation
+
+1. Using pip (and git)
+
+```
+python -m pip install git+https://github.com/kaustubhmote/floquet_nmr
+```
+
+2. Install from source
+```
+git clone https://github.com/kaustubhmote/floquet_nmr
+cd pulseplot
+[activate your virtual environment]
+python -m pip install -r requirements.txt
+python -m pip install .
+```
+
+## Usage
+
+```python
+
+>>> from floquet import F, N, pauli
+>>> I = pauli()
+>>> hamiltonian = F(n=-1, fdim=1, term=I["x"]) + F(n=None, fdim=1, term=10)
+>>> print(hamiltonian)
+
+array([[ 10. +0.j,   0. +0.j,   0. +0.j,   0. +0.j,   0. +0.j,   0. +0.j],
+       [  0. +0.j,  10. +0.j,   0. +0.j,   0. +0.j,   0. +0.j,   0. +0.j],
+       [  0. +0.j,   0.5+0.j,   0. +0.j,   0. +0.j,   0. +0.j,   0. +0.j],
+       [  0.5+0.j,   0. +0.j,   0. +0.j,   0. +0.j,   0. +0.j,   0. +0.j],
+       [  0. +0.j,   0. +0.j,   0. +0.j,   0.5+0.j, -10. +0.j,   0. +0.j],
+       [  0. +0.j,   0. +0.j,   0.5+0.j,   0. +0.j,   0. +0.j, -10. +0.j]])
+
+```
+
+For examples on how to use these hamiltonians in calculations, please see the examples below:
+
+## Examples
+
+1. MAS_Sidebands.ipynb
+
+Describes how a basic MAS calculation can be done using the Floquet formalism
+
+2. Floquet_Detection_Operator.ipynb
+
+This describes how different detection operators give rise to different truncation
+artefacts.
+
+3. Floquet_Simpson_Comparison.ipynb
+
+A comparison between calculations done using the SIMPSON programme and Floquet Formalism.
+This notebook requires SIMPSON to be installed and available in the PATH for complete
+execution.
+
+4. Operator_based_Floquet_XiX.ipynb
+
+This notebook describes how the Operator-based Floquet Theory can be leveraged to understand
+essential features of decoupling sequences using the XiX decoupling sequence as an example.
