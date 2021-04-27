@@ -6,9 +6,7 @@ This repository is intended as a pedagogical accompaniment to the following arti
 Konstantin Ivanov, Kaustubh R. Mote, Matthias Ernst, Asif Equbal, and P. K. Madhu 
 appearing in Progress in Nuclear Magnetic Resonance Spectroscopy (2021).
 
-The `floquet` module provides some convenience functions to generate Floquet Hamiltonian (single-mode), and carry out rotations,
-and show how calculations for cases such as magic-angle spinning can be done using this formalism. The actual calculations are 
-collected as Jupyter Notebooks in the `examples` directory. 
+The `floquet` module provides some convenience functions to generate Floquet Hamiltonian (single-mode), and carry out rotations. The actual calculations for cases such as the analysis of MAS sidebands are collected as Jupyter Notebooks in the `examples` directory. 
 
 
 # Requirements
@@ -52,26 +50,26 @@ array([[ 10. +0.j,   0. +0.j,   0. +0.j,   0. +0.j,   0. +0.j,   0. +0.j],
 
 ```
 
-For examples on how to use these hamiltonians in calculations, please see the examples below:
+For examples on how to use these hamiltonians in calculations, please see the below:
 
 ## Examples
 
-1. MAS_Sidebands.ipynb
+1. ![Calculation of MAS Sidebands](examples/MAS_Sidebands.ipynb)
 
-Describes how a basic MAS calculation can be done using the Floquet formalism
+Describes how a basic MAS calculation can be done using the Floquet formalism.
 
-2. Floquet_Detection_Operator.ipynb
+2. ![Floquet Detection Operator](examples/Floquet_Detection_Operator.ipynb)
 
-This describes how different detection operators give rise to different truncation
+This describes how different detection operators give rise to different truncation.
 artefacts.
 
-3. Floquet_Simpson_Comparison.ipynb
+3. ![Comparison with numerical calculations in Hilbert space](examples/Floquet_Simpson_Comparison.ipynb)
 
 A comparison between calculations done using the SIMPSON programme and Floquet Formalism.
 This notebook requires SIMPSON to be installed and available in the PATH for complete
 execution.
 
-4. Operator_based_Floquet_XiX.ipynb
+4. ![Analysis of decoupling sequences](Operator_based_Floquet_XiX.ipynb)
 
 This notebook describes how the Operator-based Floquet Theory can be leveraged to understand
 essential features of decoupling sequences using the XiX decoupling sequence as an example.
