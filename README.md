@@ -3,7 +3,7 @@
 
 This repository is intended as a pedagogical accompaniment to the following article: 
 "Floquet Theory in Magnetic Resonance: Formalism and Applications" by 
-Konstantin Ivanov, Kaustubh R. Mote, Matthias Ernst, Asif Equbal, and P. K. Madhu 
+Konstantin L. Ivanov, Kaustubh R. Mote, Matthias Ernst, Asif Equbal, and P. K. Madhu 
 appearing in Progress in Nuclear Magnetic Resonance Spectroscopy (2021).
 
 The `floquet` module provides some convenience functions to generate Floquet Hamiltonian (single-mode), and carry out rotations. The actual calculations for cases such as the analysis of MAS sidebands are collected as Jupyter Notebooks in the `examples` directory. 
