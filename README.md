@@ -72,7 +72,7 @@ A comparison between calculations done using the SIMPSON programme and Floquet F
 This notebook requires SIMPSON to be installed and available in the PATH for complete
 execution.
 
-4. [Analysis of decoupling sequences](Operator_based_Floquet_XiX.ipynb "xix")
+4. [Analysis of decoupling sequences](examples/Operator_based_Floquet_XiX.ipynb "xix")
 
 This notebook describes how the Operator-based Floquet Theory can be leveraged to understand
 essential features of decoupling sequences using the XiX decoupling sequence as an example.
