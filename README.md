@@ -23,6 +23,7 @@ The `floquet` module provides some convenience functions to generate Floquet Ham
 1. Using pip (and git)
 
 ```
+[activate your virtual environment]
 python -m pip install git+https://github.com/kaustubhmote/floquet_nmr
 ```
 
