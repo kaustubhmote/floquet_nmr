@@ -57,22 +57,22 @@ For examples on how to use these hamiltonians in calculations, please see below:
 
 ## Examples
 
-1. ![Calculation of MAS Sidebands](examples/MAS_Sidebands.ipynb "sidebands")
+1. [Calculation of MAS Sidebands](examples/MAS_Sidebands.ipynb "sidebands")
 
 Describes how a basic MAS calculation can be done using the Floquet formalism.
 
-2. ![Floquet Detection Operator](examples/Floquet_Detection_Operator.ipynb "detect")
+2. [Floquet Detection Operator](examples/Floquet_Detection_Operator.ipynb "detect")
 
 This describes how different detection operators give rise to different truncation.
 artefacts.
 
-3. ![Comparison with numerical calculations in Hilbert space](examples/Floquet_Simpson_Comparison.ipynb "compare")
+3. [Comparison with numerical calculations in Hilbert space](examples/Floquet_Simpson_Comparison.ipynb "compare")
 
 A comparison between calculations done using the SIMPSON programme and Floquet Formalism.
 This notebook requires SIMPSON to be installed and available in the PATH for complete
 execution.
 
-4. ![Analysis of decoupling sequences](Operator_based_Floquet_XiX.ipynb "xix")
+4. [Analysis of decoupling sequences](Operator_based_Floquet_XiX.ipynb "xix")
 
 This notebook describes how the Operator-based Floquet Theory can be leveraged to understand
 essential features of decoupling sequences using the XiX decoupling sequence as an example.
