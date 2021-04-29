@@ -37,7 +37,8 @@ def tensor_setup(sigmax, sigmay, sigmaz):
 def tensor_setup2(aniso, asym, iso=0):
     """ Constructs a tensor from the anisotropy and asymmetry values given"""
 
-    sigmax, sigmay, sigmaz = 0, 0, 0
+    values = -0.5 * (1 + asym), -0.5 * (1 - asym), 1
+    sigmax, sigmay, sigmaz = [i * aniso + iso for i in values] 
 
     return np.diag((sigmax, sigmay, sigmaz))
 
