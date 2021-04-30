@@ -1,6 +1,7 @@
 # Floquet Theory in Magnetic Resonance
 
-[![DOI](https://zenodo.org/badge/362110141.svg)](https://zenodo.org/badge/latestdoi/362110141)
+[doi: 10.5281/zenodo.4727633](https://dx.doi.org/10.5281/zenodo.4727633)
+
 
 This repository is intended as a pedagogical accompaniment to the following article: 
 "Floquet Theory in Magnetic Resonance: Formalism and Applications" by 
